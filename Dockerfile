@@ -4,6 +4,8 @@ MAINTAINER Fernando Mayo <fernando@tutum.co>
 # Install base packages
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get -yq install \
+        git \
+        vim  \
         curl \
         apache2 \
         libapache2-mod-php5 \
