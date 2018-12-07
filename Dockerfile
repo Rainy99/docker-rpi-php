@@ -2,8 +2,7 @@ FROM  armbuild/debian:8.0
 MAINTAINER Fernando Mayo <fernando@tutum.co>
 
 # Set tsinghua  mirrors
-RUN echo 'deb http://mirrors.tuna.tsinghua.edu.cn/debian jessie main' > /etc/apt/sources.list
-RUN echo 'deb http://mirrors.tuna.tsinghua.edu.cn/debian jessie-updates main' >> /etc/apt/sources.list
+RUN echo 'deb http://mirrors.tuna.tsinghua.edu.cn/debian jessie main' > /etc/apt/sources.list && echo 'deb http://mirrors.tuna.tsinghua.edu.cn/debian jessie-updates main' >> /etc/apt/sources.list
 
 # Install base packages
 RUN apt-get update && \
